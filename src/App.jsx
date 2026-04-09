@@ -12,6 +12,7 @@ import UseLayoutEffectPage from './pages/UseLayoutEffectPage';
 import UseIdPage from './pages/UseIdPage';
 import UseImperativeHandlePage from './pages/UseImperativeHandlePage';
 import UseSyncExternalStorePage from './pages/UseSyncExternalStorePage';
+import UseInsertionEffectPage from './pages/UseInsertionEffectPage';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <li><Link to="/use-id">useId</Link></li>
             <li><Link to="/use-imperative-handle">useImperativeHandle</Link></li>
             <li><Link to="/use-sync-external-store">useSyncExternalStore</Link></li>
+            <li><Link to="/use-insertion-effect">useInsertionEffect</Link></li>
             {/* We will add more links here as we go */}
           </ul>
         </nav>
@@ -54,6 +56,7 @@ function App() {
             <Route path='/use-id' element={<UseIdPage />} />
             <Route path='/use-imperative-handle' element={<UseImperativeHandlePage />} />
             <Route path='/use-sync-external-store' element={<UseSyncExternalStorePage />} />
+            <Route path='/use-insertion-effect' element={<UseInsertionEffectPage />} />
             <Route path="/" element={<h1>Select a Hook to explore</h1>} />
           </Routes>
         </main>
