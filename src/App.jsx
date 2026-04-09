@@ -9,6 +9,7 @@ import UseReducerPage from './pages/UseReducerPage';
 import UseTransitionPage from './pages/UseTransitionPage';
 import UseDeferredValuePage from './pages/UseDeferredValuePage';
 import UseLayoutEffectPage from './pages/UseLayoutEffectPage';
+import UseIdPage from './pages/UseIdPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <li><Link to="/use-transition">useTransition</Link></li>
             <li><Link to="/use-deferred-value">useDeferredValue</Link></li>
             <li><Link to="/use-layout-effect">useLayoutEffect</Link></li>
+            <li><Link to="/use-id">useId</Link></li>
             {/* We will add more links here as we go */}
           </ul>
         </nav>
@@ -45,6 +47,7 @@ function App() {
             <Route path='/use-transition' element={<UseTransitionPage />} />
             <Route path='/use-deferred-value' element={<UseDeferredValuePage />} />
             <Route path='/use-layout-effect' element={<UseLayoutEffectPage />} />
+            <Route path='/use-id' element={<UseIdPage />} />
             <Route path="/" element={<h1>Select a Hook to explore</h1>} />
           </Routes>
         </main>
