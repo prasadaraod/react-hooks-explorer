@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import UseStatePage from './pages/UseStatePage';
+import UseEffectPage from './pages/UseEffectPage';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <h2>Hooks</h2>
           <ul>
             <li><Link to="/use-state">useState</Link></li>
+            <li><Link to="/use-effect">useEffect</Link></li>
             {/* We will add more links here as we go */}
           </ul>
         </nav>
@@ -18,6 +20,7 @@ function App() {
         <main style={{ flex: 1, padding: '20px' }}>
           <Routes>
             <Route path="/use-state" element={<UseStatePage />} />
+            <Route path='/use-effect' element={<UseEffectPage />} />
             <Route path="/" element={<h1>Select a Hook to explore</h1>} />
           </Routes>
         </main>
