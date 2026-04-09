@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-// import UseStatePage from './pages/UseStatePage';
+import UseStatePage from './pages/UseStatePage';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         {/* Main Content Area */}
         <main style={{ flex: 1, padding: '20px' }}>
           <Routes>
-            {/* <Route path="/use-state" element={<UseStatePage />} /> */}
+            <Route path="/use-state" element={<UseStatePage />} />
             <Route path="/" element={<h1>Select a Hook to explore</h1>} />
           </Routes>
         </main>
