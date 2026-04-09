@@ -11,6 +11,7 @@ import UseDeferredValuePage from './pages/UseDeferredValuePage';
 import UseLayoutEffectPage from './pages/UseLayoutEffectPage';
 import UseIdPage from './pages/UseIdPage';
 import UseImperativeHandlePage from './pages/UseImperativeHandlePage';
+import UseSyncExternalStorePage from './pages/UseSyncExternalStorePage';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <li><Link to="/use-layout-effect">useLayoutEffect</Link></li>
             <li><Link to="/use-id">useId</Link></li>
             <li><Link to="/use-imperative-handle">useImperativeHandle</Link></li>
+            <li><Link to="/use-sync-external-store">useSyncExternalStore</Link></li>
             {/* We will add more links here as we go */}
           </ul>
         </nav>
@@ -51,6 +53,7 @@ function App() {
             <Route path='/use-layout-effect' element={<UseLayoutEffectPage />} />
             <Route path='/use-id' element={<UseIdPage />} />
             <Route path='/use-imperative-handle' element={<UseImperativeHandlePage />} />
+            <Route path='/use-sync-external-store' element={<UseSyncExternalStorePage />} />
             <Route path="/" element={<h1>Select a Hook to explore</h1>} />
           </Routes>
         </main>
