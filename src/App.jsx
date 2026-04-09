@@ -6,6 +6,7 @@ import UseMemoPage from './pages/UseMemoPage';
 import UseCallbackPage from './pages/UseCallbackPage';
 import UseRefPage from './pages/UseRefPage';
 import UseReducerPage from './pages/UseReducerPage';
+import UseTransitionPage from './pages/UseTransitionPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <li><Link to="/use-callback">useCallback</Link></li>
             <li><Link to="/use-ref">useRef</Link></li>
             <li><Link to="/use-reducer">useReducer</Link></li>
+            <li><Link to="/use-transition">useTransition</Link></li>
             {/* We will add more links here as we go */}
           </ul>
         </nav>
@@ -36,6 +38,7 @@ function App() {
             <Route path='/use-callback' element={<UseCallbackPage />} />
             <Route path='/use-ref' element={<UseRefPage />} />
             <Route path='/use-reducer' element={<UseReducerPage />} />
+            <Route path='/use-transition' element={<UseTransitionPage />} />
             <Route path="/" element={<h1>Select a Hook to explore</h1>} />
           </Routes>
         </main>
