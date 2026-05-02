@@ -13,6 +13,12 @@ import UseIdPage from './pages/UseIdPage';
 import UseImperativeHandlePage from './pages/UseImperativeHandlePage';
 import UseSyncExternalStorePage from './pages/UseSyncExternalStorePage';
 import UseInsertionEffectPage from './pages/UseInsertionEffectPage';
+import CounterPage from './pages/CounterPage';
+import MultipleDynamicInputs from './pages/MultipleDynamicInputs';
+import RegistrationPage from './pages/RegistrationPage';
+import MultipleInputs from './pages/MultipleInputs';
+import TodosPage from './pages/TodosPage';
+import PostPage from './pages/PostPage';
 
 function App() {
   return (
@@ -36,6 +42,13 @@ function App() {
             <li><Link to="/use-imperative-handle">useImperativeHandle</Link></li>
             <li><Link to="/use-sync-external-store">useSyncExternalStore</Link></li>
             <li><Link to="/use-insertion-effect">useInsertionEffect</Link></li>
+
+            <li><Link to="/counter-page">Counter Page</Link></li>
+            <li><Link to="/dynamic-inputs"> Dynamic inputs</Link></li>
+            <li><Link to="/registration-page"> Registration page </Link></li>
+            <li><Link to="/multiple-inputs"> Multiple Inputs</Link></li>
+            <li><Link to="/todos-page"> Todos Page</Link></li>
+            <li><Link to="/post-page"> post page</Link></li>
             {/* We will add more links here as we go */}
           </ul>
         </nav>
@@ -57,6 +70,12 @@ function App() {
             <Route path='/use-imperative-handle' element={<UseImperativeHandlePage />} />
             <Route path='/use-sync-external-store' element={<UseSyncExternalStorePage />} />
             <Route path='/use-insertion-effect' element={<UseInsertionEffectPage />} />
+            <Route path='/counter-page' element={<CounterPage />} />
+            <Route path='/dynamic-inputs' element={<MultipleDynamicInputs />} />
+            <Route path='/registration-page' element={<RegistrationPage />} />
+            <Route path='/multiple-inputs' element={<MultipleInputs/>} />
+            <Route path="/todos-page" element={<TodosPage />} />
+            <Route path='/post-page' element={<PostPage />} />
             <Route path="/" element={<h1>Select a Hook to explore</h1>} />
           </Routes>
         </main>
